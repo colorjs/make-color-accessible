@@ -1,6 +1,8 @@
 # make-color-accessible 
 
-produce colors that meet web content accessibility guidelines
+> produce colors that meet [web content accessibility guidelines](https://www.w3.org/TR/WCAG/#visual-audio-contrast).
+
+Works with Node.js and Browserify.
 
 ## Installation
 
@@ -8,6 +10,20 @@ produce colors that meet web content accessibility guidelines
 npm install make-color-accessible --save
 ```
 
+## Demo
+
+```sh
+git clone https://github.com/zeke/make-color-accessible
+npm i && npm run demo
+```
+
+## Usage
+
+See [demo.js](demo.js)
+
+## API
+
+TODO
 
 ## Tests
 
