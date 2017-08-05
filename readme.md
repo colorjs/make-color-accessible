@@ -4,6 +4,8 @@
 
 Works with Node.js and Browserify.
 
+<img width="270" alt="screen shot 2017-08-04 at 10 33 47 pm" src="https://user-images.githubusercontent.com/2289/28993183-07da4ebc-7965-11e7-8fb3-bbcb27e26fbd.png">
+
 ## Installation
 
 ```sh
@@ -23,7 +25,7 @@ See [demo.js](demo.js)
 
 ## API
 
-TODO
+TODO. See [test.js](test.js) for now.
 
 ## Tests
 
