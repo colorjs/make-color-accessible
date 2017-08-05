@@ -1,0 +1,27 @@
+body {
+  font-family: "helvetica neue", helvetica, arial;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+  float: none;
+  clear: both;
+  margin: 40px;
+  height: 150px;
+}
+
+li > div {
+  float: left;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "make-color-accessible",
+  "version": "1.0.0",
+  "description": "produce colors that meet web content accessibility guidelines",
+  "main": "dist.js",
+  "repository": "https://github.com/zeke/make-color-accessible",
+  "author": "Zeke Sikelianos <zeke@sikelianos.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "buble": "^0.15.2",
+    "budo": "^10.0.4",
+    "chai": "^4.1.0",
+    "mocha": "^3.5.0",
+    "standard": "^10.0.2",
+    "standard-markdown": "^4.0.2",
+    "yo-yo": "^1.4.1"
+  },
+  "dependencies": {
+    "color2": "^1.0.8"
+  },
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "mocha && standard --fix && standard-markdown",
+    "build": "buble src.js > dist.js",
+    "predemo": "npm run build",
+    "demo": "budo demo.js --live --no-debug --open --css demo.css"
+  },
+  "standard": {
+    "ignore": ["dist.js", "demo.js"]
+  }
+}
