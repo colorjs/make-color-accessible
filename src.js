@@ -8,8 +8,8 @@ module.exports = function makeColorAccessible (color, opts) {
     minContrast: 4.5
   }
   opts = Object.assign(defaults, opts)
-  color = new Color(color)
-  opts.background = new Color(opts.background)
+  color = Color(color)
+  opts.background = Color(opts.background)
 
   const contrast = color.contrast(opts.background)
 

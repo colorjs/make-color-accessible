@@ -17,16 +17,16 @@ describe('makeColorAccesssible', () => {
   })
 
   it('darkens the color if it is too light for a light bg', () => {
-    const oldColor = new Color('#996699')
-    const newColor = new Color(makeColorAccesssible(oldColor))
-    oldColor.contrast(new Color('white')).should.be.below(4.5)
-    newColor.contrast(new Color('white')).should.be.above(4.5)
+    const oldColor = Color('#996699')
+    const newColor = Color(makeColorAccesssible(oldColor))
+    oldColor.contrast(Color('white')).should.be.below(4.5)
+    newColor.contrast(Color('white')).should.be.above(4.5)
   })
 
   it('lightens the color if it is too dark for a dark bg', () => {
-    const oldColor = new Color('#333')
-    const newColor = new Color(makeColorAccesssible(oldColor, {background: 'black'}))
-    oldColor.contrast(new Color('black')).should.be.below(4.5)
-    newColor.contrast(new Color('black')).should.be.above(4.5)
+    const oldColor = Color('#333')
+    const newColor = Color(makeColorAccesssible(oldColor, {background: 'black'}))
+    oldColor.contrast(Color('black')).should.be.below(4.5)
+    newColor.contrast(Color('black')).should.be.above(4.5)
   })
 })
