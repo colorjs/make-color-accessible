@@ -29,4 +29,12 @@ describe('makeColorAccesssible', () => {
     oldColor.contrast(Color('black')).should.be.below(4.5)
     newColor.contrast(Color('black')).should.be.above(4.5)
   })
+
+  it('defaults to white on black instead of exceeding call stack', () => {
+    const oldColor = Color('#010101')
+    const newColor = Color(makeColorAccesssible(oldColor, {background: 'black'}))
+    newColor.hexString().should.eq('#FFF')
+    // oldColor.contrast(Color('black')).should.be.below(4.5)
+    // newColor.contrast(Color('black')).should.be.above(4.5)
+  })
 })

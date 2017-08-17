@@ -44,8 +44,9 @@ npm test
 - [budo](https://github.com/mattdesl/budo): a browserify server for rapid prototyping
 - [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
+- [random-hex-color](http://ghub.io/random-hex-color): Generate a random hex color.
 - [standard](https://github.com/feross/standard): JavaScript Standard Style
-- [standard-markdown](http://ghub.io/standard-markdown): Test your Markdown files for Standard JavaScript Style™
+- [standard-markdown](): Test your Markdown files for Standard JavaScript Style™
 - [yo-yo](https://github.com/maxogden/yo-yo): A tiny library for building modular UI components using DOM diffing and ES6 tagged template literals
 
 

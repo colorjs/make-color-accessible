@@ -1,13 +1,11 @@
 const makeColorAccessible = require('.')
 const yo = require('yo-yo')
-const randomColor = function () {
-  return '#' + Math.floor(Math.random() * 16777215).toString(16)
-}
+const randomColor = require('random-hex-color')
 
 const colors = Array
   .apply(null, Array(100))
   .map(i => {
-    const color = randomColor()
+    const color = randomColor().toUpperCase()
     return {
       before: color,
       after: makeColorAccessible(color)

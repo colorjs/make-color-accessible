@@ -14,6 +14,20 @@ module.exports = function makeColorAccessible (color, opts) {
   const contrast = color.contrast(opts.background)
 
   if (contrast >= opts.minContrast) return color.hexString()
-  if (opts.background.isLight()) return makeColorAccessible(color.darken(0.1), opts)
-  if (opts.background.isDark()) return makeColorAccessible(color.lighten(0.1), opts)
+
+  if (opts.background.isLight()) {
+    try {
+      return makeColorAccessible(color.darken(0.1), opts)
+    } catch (e) {
+      return '#000'
+    }
+  }
+
+  if (opts.background.isDark()) {
+    try {
+      return makeColorAccessible(color.lighten(0.1), opts)
+    } catch (e) {
+      return '#FFF'
+    }
+  }
 }

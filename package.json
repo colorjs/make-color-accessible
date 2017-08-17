@@ -11,6 +11,7 @@
     "budo": "^10.0.4",
     "chai": "^4.1.0",
     "mocha": "^3.5.0",
+    "random-hex-color": "^1.0.1",
     "standard": "^10.0.2",
     "standard-markdown": "^4.0.2",
     "yo-yo": "^1.4.1"
@@ -26,6 +27,9 @@
     "demo": "budo demo.js --live --no-debug --open --css demo.css"
   },
   "standard": {
-    "ignore": ["dist.js", "demo.js"]
+    "ignore": [
+      "dist.js",
+      "demo.js"
+    ]
   }
 }
