@@ -1,6 +1,6 @@
 {
   "name": "make-color-accessible",
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "produce colors that meet web content accessibility guidelines",
   "main": "dist.js",
   "repository": "https://github.com/zeke/make-color-accessible",
@@ -14,7 +14,8 @@
     "random-hex-color": "^1.0.1",
     "standard": "^10.0.2",
     "standard-markdown": "^4.0.2",
-    "yo-yo": "^1.4.1"
+    "yo-yo": "^1.4.1",
+    "semantic-release": "^8.2.0"
   },
   "dependencies": {
     "color2": "^1.0.8"
@@ -24,7 +25,8 @@
     "test": "mocha && standard --fix && standard-markdown",
     "build": "buble src.js > dist.js",
     "predemo": "npm run build",
-    "demo": "budo demo.js --live --no-debug --open --css demo.css"
+    "demo": "budo demo.js --live --no-debug --open --css demo.css",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "standard": {
     "ignore": [
