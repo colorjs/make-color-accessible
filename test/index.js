@@ -14,6 +14,8 @@ describe('makeColorAccesssible', () => {
 
   it('returns the same color if it is already accessible', () => {
     makeColorAccesssible('#333').should.equal('#333')
+    makeColorAccesssible('#FFF', {background: 'black'}).should.equal('#FFF')
+    makeColorAccesssible('#fff', {background: 'black'}).should.equal('#fff')
   })
 
   it('darkens the color if it is too light for a light bg', () => {
