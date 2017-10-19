@@ -1,6 +1,6 @@
 {
   "name": "make-color-accessible",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "produce colors that meet web content accessibility guidelines",
   "main": "dist.js",
   "repository": "https://github.com/zeke/make-color-accessible",
