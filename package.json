@@ -1,6 +1,6 @@
 {
   "name": "make-color-accessible",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "description": "produce colors that meet web content accessibility guidelines",
   "main": "dist.js",
   "repository": "https://github.com/zeke/make-color-accessible",
@@ -12,10 +12,10 @@
     "chai": "^4.1.0",
     "mocha": "^3.5.0",
     "random-hex-color": "^1.0.1",
+    "semantic-release": "^8.2.0",
     "standard": "^10.0.2",
     "standard-markdown": "^4.0.2",
-    "yo-yo": "^1.4.1",
-    "semantic-release": "^8.2.0"
+    "yo-yo": "^1.4.1"
   },
   "dependencies": {
     "color2": "^1.0.8"
