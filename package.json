@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "description": "produce colors that meet web content accessibility guidelines",
   "main": "dist.js",
-  "repository": "https://github.com/zeke/make-color-accessible",
+  "repository": "https://github.com/colorjs/make-color-accessible",
   "author": "Zeke Sikelianos <zeke@sikelianos.com>",
   "license": "MIT",
   "devDependencies": {

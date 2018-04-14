@@ -15,7 +15,7 @@ npm install make-color-accessible --save
 ## Demo
 
 ```sh
-git clone https://github.com/zeke/make-color-accessible
+git clone https://github.com/colorjs/make-color-accessible
 npm i && npm run demo
 ```
 
